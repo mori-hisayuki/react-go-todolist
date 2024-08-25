@@ -1,0 +1,12 @@
+
+services:
+  golang:
+    build:
+      context: .
+      dockerfile: ./docker/go/Dockerfile
+  # ゾンビプロセス防止
+    init: true
+    volumes:
+      - .:/develop
+    stdin_open: true
+    entrypoint: bash
