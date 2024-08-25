@@ -6,6 +6,8 @@ services:
       dockerfile: ./docker/go/Dockerfile
   # ゾンビプロセス防止
     init: true
+    ports:
+      - "4000:4000"
     volumes:
       - .:/develop
     stdin_open: true
