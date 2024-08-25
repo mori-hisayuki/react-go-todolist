@@ -1,3 +1,10 @@
 
+.env
+
 # Go
-tmp
+
+# Compiled binary files
+/tmp/
+
+# logs
+*.log
