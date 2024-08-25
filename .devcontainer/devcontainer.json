@@ -1,0 +1,36 @@
+{
+  "name": "Go on VSCode",
+  "dockerComposeFile": "./compose.yml",
+  "service": "golang",
+  "workspaceFolder": "/develop",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "files.insertFinalNewline": true,
+        "[go]":{
+          "editor.formatOnSave": false,
+          "editor.defaultFormatter": "golang.go"
+        }
+      },
+      "extensions": [
+        "vscodevim.vim",                          // Vim
+        "formulahendry.auto-rename-tag",          // Auto Rename Tag
+        "mhutchie.git-graph",                     // Git Graph
+        "pkief.material-icon-theme",              // Material Icon Thema
+        "eamodio.gitlens",                        // GitLens — Git supercharged
+        "oderwat.indent-rainbow",                 // indent-rainbow
+        "ionutvmi.path-autocomplete",             // Path Autocomplete
+        "christian-kohler.path-intellisense",     // Path Intellisense
+        "streetsidesoftware.code-spell-checker",  // Code Spell Checker
+        "EditorConfig.EditorConfig",              // EditorConfig for VS Code
+        "ms-azuretools.vscode-docker",            // Docker
+        "github.copilot",                         // GitHub Copilot
+        "github.vscode-github-actions",	          // GitHub Actions 
+        "golang.go",                              // Go
+        "windmilleng.vscode-go-autotest",         // Go Autotest
+        "766b.go-outliner",                       // Go Outliner
+        "premparihar.gotestexplorer"              // Go Test Exloreor
+      ]
+    }
+  }
+}

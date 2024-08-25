@@ -1,0 +1,18 @@
+services:
+  golang:
+    build:
+      context: .
+      dockerfile: ./go/Dockerfile
+    # ゾンビプロセス防止
+    init: true
+    environment:
+      - TZ=JST-9
+    ports:
+      - "4000:4000"
+    volumes:
+      - ..:/develop
+      - .extensions:$HOME_DIR/.vscode-server/extensions
+      - ~/.ssh:$HOME_DIR/.ssh
+      - ~/.bashrc:$HOME_DIR/.bashrc
+    stdin_open: true
+    entrypoint: bash
